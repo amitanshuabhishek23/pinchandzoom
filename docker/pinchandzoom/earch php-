@@ -1,0 +1,21 @@
+[0;1;32m●[0m apache2.service - The Apache HTTP Server
+   Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+  Drop-In: /lib/systemd/system/apache2.service.d
+           └─apache2-systemd.conf
+   Active: [0;1;32mactive (running)[0m since Wed 2021-02-10 20:22:24 PST; 6s ago
+  Process: 20339 ExecStop=/usr/sbin/apachectl stop (code=exited, status=0/SUCCESS)
+  Process: 20344 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SUCCESS)
+ Main PID: 20364 (apache2)
+    Tasks: 6 (limit: 4915)
+   CGroup: /system.slice/apache2.service
+           ├─20364 /usr/sbin/apache2 -k start
+           ├─20369 /usr/sbin/apache2 -k start
+           ├─20370 /usr/sbin/apache2 -k start
+           ├─20371 /usr/sbin/apache2 -k start
+           ├─20372 /usr/sbin/apache2 -k start
+           └─20373 /usr/sbin/apache2 -k start
+
+Feb 10 20:22:24 bitcot-Latitude-7480 systemd[1]: Stopped The Apache HTTP Server.
+Feb 10 20:22:24 bitcot-Latitude-7480 systemd[1]: Starting The Apache HTTP Server...
+Feb 10 20:22:24 bitcot-Latitude-7480 apachectl[20344]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Feb 10 20:22:24 bitcot-Latitude-7480 systemd[1]: Started The Apache HTTP Server.
